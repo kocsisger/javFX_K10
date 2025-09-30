@@ -17,7 +17,7 @@ public class App extends Application {
         var scene = new Scene(loader.load());
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
-        Model model = new Submodel();
+        Model model = new Model();
         MainController controller = ((MainController)loader.getController());
         controller.setModel(model);
 
