@@ -32,6 +32,12 @@ public class MainController {
     }
 
     @FXML
+    void handleChangeButtonClicked() {
+        model.getStudent().setName("Tom Smith");
+        nameLabel.setText(model.getStudent().getName());
+    }
+
+    @FXML
     void handleClick() {
         System.out.println("Hello world!!!");
         if (seasonLabel.getText().equals("Summer"))
